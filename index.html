@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        label{
+            display: inline-block;
+            width: 150px;
+            margin-bottom: 10px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="addProduct">Add Product
+        <div>
+            <label for="itemName">Item Name</label>
+            <input type="text" class="itemName" name="item"> 
+        </div>
+      <div>
+        <label for="priceItem">Item Price</label>
+        <input type="number" class="priceItem" name="price">
+      </div>
+      <div>
+        <label for="picture">Enter Picture</label>
+        <input type="text" class="picture">
+      </div>
+        <label for="chooseItems">Choose Items</label>
+        <select name="itemsProduct" id="items">
+        <option value="Drinks">Drinks</option>
+        <option value="Meat">Meat</option>
+        <option value="Dairy">Dairy</option>
+        <option value="Snacks">Snacks</option>
+        <option value="Basic">Basic</option>
+        </select>
+    </form>
+    <h2>My Cart</h2>
+    <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Product name</th>
+      <th scope="col">Product price</th>
+      <th scope="col">Product category</th>
+      <th scope="col">Product picture</th>
+    </tr>
+  </thead>
+  <tbody class="tbody">
+ 
+  </tbody>
+</table>
+    <button type="button" class="btn_add_product">Click add product</button>
+    <button type="button" class="btn_delete">Actions</button>
+    <script src="script.js"></script>
+    </body>
+</html>
