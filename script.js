@@ -14,6 +14,7 @@
      let newPrice = priceItem.value
      let newSelext = mySelect.value;
      let newPicture = picture.value;
+  // indentation
     let item ={
       newItem: newItem ,
       newPrice:newPrice,
@@ -21,11 +22,12 @@
       newPicture: newPicture
    }
      items.push(item)
-
+ // function inside a function?
      function toDoElement(input, elements, create) {
       const element = document.createElement(elements);
   
       trCreate.appendChild(element);
+// great!
       if (elements === "img") {
         element.src = input;
       } else {
@@ -44,8 +46,10 @@
      deleteItems(newItem,newPrice,newSelext,picture)
 
  }
- btn_add_product.addEventListener("click",listTasks)
+//the JS convention is not underscore
+btn_add_product.addEventListener("click",listTasks)
 
+// why did you pass vars and didn't use them?
  function deleteItems(newItem,newPrice,newSelext,picture) {
      itemName.value=""
      priceItem.value=""
@@ -53,7 +57,7 @@
      picture.value=""
     
  }
-
+ // this will delete the all table, with the titles.
  function deleteAction() {
     
      table.innerHTML=""
@@ -73,6 +77,7 @@ function getFromStorage() {
   return JSON.parse(localStorage["items"]);
 }
 (function init() {
+ //great!
   if (items.length > 0) {
     items.forEach((item) => {
       toDoElement(item);
